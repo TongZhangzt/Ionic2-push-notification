@@ -14,6 +14,7 @@
 * _Replace **YOUR_SENDER_ID** in **config.xml and app.ts** with above **SENDER_ID**_
 
 ### Android
+Build and run in Android
 
     ```bash
     $ ionic platform add android
@@ -22,6 +23,8 @@
     ```
 
 ### iOS
+Build and run in ios
+
     ```bash
     $ ionic platform add ios
     $ ionic build ios
