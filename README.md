@@ -15,24 +15,21 @@
 
 ### Android
 
-```bash
+    ```bash
     $ ionic platform add android
     $ ionic build android
     $ ionic run android
-```
+    ```
 
 ### iOS
     ```bash
     $ ionic platform add ios
     $ ionic build ios
-    ```    
-    Run using XCode
+    ```   
 
+    Run using XCode
 
 ####Use device token printed in console for push notifications using below server code
 
- 
 ## Server Code
-=================
-
-It has server code used to send Push Notification to iOS and Android device.## 
+It has server code used to send Push Notification to iOS and Android device.
