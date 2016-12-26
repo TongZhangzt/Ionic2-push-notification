@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {IonicApp, IonicModule} from "ionic-angular";
 import {TabsPage} from "../pages/tabs/tabs";
-import {Ionic2PushApp} from "./app";
+import {Ionic2PushApp} from "./app.component";
 import {HomePage} from "../pages/home/home";
 import {DetailsPage} from "../pages/details/details";
 
