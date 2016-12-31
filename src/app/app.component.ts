@@ -91,7 +91,12 @@ export class Ionic2PushApp {
         } else {
           //Define the callback function for user clicking on push notification directly
           //when app is open in the foreground
-           let confirmAlert = this.alertCtrl.create({
+
+          var pastPushSavedID = window.localStorage.getItem("pastPushSavedID");
+
+          if (data.additionalData.id !== pastPushSavedID){
+            window.localStorage.setItem("pastPushSavedID", data.additionalData.id);
+            let confirmAlert = this.alertCtrl.create({
             title: 'New Notification',
             message: data.message,
             buttons: [{
@@ -107,6 +112,7 @@ export class Ionic2PushApp {
           });
           confirmAlert.present();
           console.log("Push notification clicked");
+          }
         }
       });
 

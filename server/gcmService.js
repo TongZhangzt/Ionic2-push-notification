@@ -34,9 +34,12 @@ app.get('/push', function(req, res) {
     //Set content-available = 1, the on('notification') event handler will be called even app running in background or closed
     message.addData('content-available', '1');
     //If you add force-start: 1 to the data payload the app will be restarted in background even if it was force closed.
-    message.addData('force-start', 1);
+    //message.addData('force-start', 1);
     //priority can be 1 or 2, set priority will inform the user on the screen even though in the background or close the app.
     message.addData('priority', 2);
+
+    message.addData('id', Math.random());
+
     //Add action buttons, set the foreground property to true the app will be brought to the front
     //if foreground is false then the callback is run without the app being brought to the foreground.
     message.addData('actions', [
